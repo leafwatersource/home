@@ -1,0 +1,153 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+.footer{
+    background-color: #545454;
+}
+.footer .row .content{
+    padding: 0 4em;
+    margin:2em 0;
+}
+.content{
+    width:100%;
+}
+.content .title{
+    color:#aeaeae;
+}
+.content .Article{
+    width:100%;
+    color:#aeaeae;
+    background-color:#4b4b4b;
+    padding:.5em;
+    margin: .5em 0;
+    position: relative;
+    z-index: 3;
+}
+.content .Article p{
+    font-size: .9em;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+
+}
+.content .Article p::after{
+    content: '';
+    display: block;
+    width: 100%;
+    margin-top: .5em;
+    border: .5px solid #595959;
+}
+.content .Article span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1%;
+    background-color: #2991d6;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+.content .Article:hover span{
+    width: 100%;
+    z-index:1;
+}
+
+.inputG div{
+    width: 100%;
+    margin: .2em 0;
+}
+.inputG input[type='text']{
+    width:100%;
+    padding: .5em 1em;
+    outline: none;
+    color: #0084ff;
+    font-size: .5em;
+}
+.inputG input::-webkit-input-placeholder {
+    color: #999;
+    font-size: .5em;
+}
+
+.inputG input::-moz-placeholder {
+    color: #999;
+    font-size: .5em;
+}
+
+.inputG input::-ms-input-placeholder {
+    color: #999;
+    font-size: .5em;
+}
+.inputR{
+    padding: .2em 0;
+    margin: .2em 0;
+}
+.inputR input[type=radio]{
+    margin-left: 1em;
+}
+.inputR span{
+    margin-left: .2em;
+    font-size: .5em;
+    line-height: .8em;
+    color:#999;
+}
+.textArea{
+    padding: 0 1em;
+}
+.textArea textarea{
+    width:100%;
+    color: #0084ff;
+    font-size: .5em;
+    padding: .5em 1em;
+}
+.leafBtn{
+    padding: 0 1em;
+    margin-top: 2em;
+}
+.leafBtn button{
+    font-size: .5em;
+}
+.contact div p{
+    font-size: .7em;
+    color:#999;
+    white-space:nowrap;
+}
+.contact div:nth-of-type(1) p{
+    font-weight: bolder;
+}
+.contact div p a:hover{
+    text-decoration: none;
+}
+.foot-top{
+    margin-bottom: 2em;
+    border: .5px solid #666666;
+}
+.foot-footer{
+    padding: 0 4em;
+}
+.foot-footer p{
+    color:#999;
+    width:100%;
+    font-size: .7em;
+    margin: 0;
+    margin-bottom: .5em;
+}
+.foot-footer p:nth-of-type(3){
+    position: relative;
+    margin-bottom: 2em;
+}
+.foot-footer p a{
+    display: block;
+    position: absolute;
+    right: -2em;
+    top: 0;
+    background-color: #999;
+    color:#fff;
+    padding: .2em;
+}
+.foot-footer p a:hover{
+    text-decoration: none;
+}

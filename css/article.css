@@ -1,0 +1,73 @@
+.articleContentTime {
+    padding: 0 0 0 5em;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.articleTime {
+    color: #A8A8A8;
+    font-size: .6em;
+    white-space: nowrap;
+    margin-right: 4.6em;
+    display: inline-block;
+}
+
+.articleContentTime .articlecircle {
+    width: .8em;
+    height: .8em;
+    display: inline-block;
+    border: .2em solid #2991d6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.articleContentClassification {
+    padding: 0 5em;
+}
+
+.contentTitle {
+    color: #A8A8A8;
+}
+
+.contentTitle span {
+    font-size: .8em;
+}
+
+.contentTitle i {
+    margin-left: 1em;
+}
+
+.contentTitle span a {
+    color: #A8A8A8;
+    border-bottom: .1em #A8A8A8 dashed;
+}
+
+.contentTitle span a:hover {
+    text-decoration: none;
+}
+
+.contentRight select {
+    outline: none;
+    border: none;
+    color: #A8A8A8;
+    font-size: .8em;
+}
+
+.contentRight {
+    position: absolute;
+    top: 0;
+    right: 4em;
+    display: inline-block;
+}
+.articleConTitle p{
+    color: #444;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 992px) {
+    .articleContentTime .articlecircle {
+        display: none;
+    }
+}

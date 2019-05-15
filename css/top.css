@@ -1,0 +1,24 @@
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #2991D6;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #222;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar-brand img {
+    height: 3em;
+}
+
+.nav-bar li {
+    margin: 0 1em;
+}
+
+.nav-bar li a {
+    font-size: .8em;
+    white-space: nowrap
+}

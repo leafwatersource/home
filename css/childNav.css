@@ -1,0 +1,40 @@
+.article-title {
+    margin: 2em 0;
+}
+
+.articleTitleLeft {
+    padding: 0 2em;
+}
+
+.articleTitleLeft h4 {
+    padding: 0 2em;
+    color: #888;
+    font-weight: bolder;
+}
+
+.articleTitleRight .aritcleNav {
+    overflow: hidden;
+}
+
+.articleTitleRight .aritcleNav li {
+    float: right;
+    margin: 0 1em;
+}
+
+.articleTitleRight .aritcleNav li a {
+    color: rgba(136, 136, 136, .6);
+}
+@media screen and (max-width: 767px) {
+    .articleTitleRight {
+        display: none;
+    }
+    .articleTitleLeft h4 {
+        padding: 0;
+    }
+    .contentRight select{
+        display: none;
+    }
+    .articleTitleLeft h4 {
+        font-weight: normal;
+    }
+}

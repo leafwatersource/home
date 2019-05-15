@@ -1,0 +1,82 @@
+body {
+    font-family: "Microsoft YaHei UI Light", serif;
+}
+.recommendedTop .title {
+    text-align: center;
+    color: #444;
+    margin: 1em 0;
+}
+
+.recommendedTop .imgbox img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.list {
+    background: url("../img/6999695_110407582035_2-1.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.list li div {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.list li:nth-of-type(1) .listLeft,.list li:nth-of-type(1) .listRight {
+    font-weight: bolder;
+    color: #444;
+}
+.listLeft, .listRight {
+    font-size: .8em;
+    color: #626262;
+    /*border: 1px solid black;*/
+}
+.recommendedBottom{
+    background: url("../img/21493555_142302698559_2-1.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+.recommendedBottomTitle{
+    text-align: center;
+    color: #fff;
+    margin: 2em;
+}
+.recommendedBottomTitle::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: .1em #fff dashed ;
+    margin: 1em auto;
+}
+.recommendedBottomContent{
+    color:#fff;
+}
+.Content-one{
+    padding: 0 3.5em;
+}
+.Content-two{
+    padding: 0 4em 0 0;
+}
+.Content-one p,.Content-two p{
+    margin: 6em 0;
+}
+.ContentImgBox{
+    width: 100%;
+    padding: 0 2em;
+    height: 100%;
+    display: flex;
+}
+.ContentImgBox img{
+    width: 100%;
+    align-self: center;
+}
+.ContentImgBox img::after{
+    content: '';
+    display: block;
+    clear: both;
+}
