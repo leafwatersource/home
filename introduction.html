@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>产品概述</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/childNav.css">
+    <link rel="stylesheet" href="./css/introduction.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="recommendedTop">
+        <h3 class="title">PlanMate-APS 系统基本概念</h3>
+        <div class="imgbox"><img src="img/123-1-1.png"/></div>
+        <h5 class="title">PlanMate-APS 系统主要功能</h5>
+        <ul class="list">
+            <li class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listLeft">功能清单</div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listRight">用途</div>
+            </li>
+            <li class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listLeft">短期详细排程</div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listRight">用于车间实际生产知道，完全优化</div>
+            </li>
+            <li class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listLeft">长期产能分析（不限时间长度）</div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listRight">
+                    设备产能负载分析：按周计算设备（或设备组）负载，根据分析结果可以得到设备在不同时间段的负载率
+                </div>
+            </li>
+            <li class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listLeft">库存物料分配、工单齐料分析</div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listRight">在库及在途库存物料分配（共用料按照齐料原则分配），输出物料分配报表及物料需求计划报表
+                </div>
+            </li>
+            <li class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listLeft">未来人力需求分析</div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listRight">未来几个月，在不同的时间段的人力需求，便于企业提前进行人力资源准备</div>
+            </li>
+            <li class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listLeft">物料需求计划（MRP）</div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 listRight">按照设备产能进行实际生产排程，产生物料需求计划（不同于ERP的无限产能计划）</div>
+            </li>
+        </ul>
+    </div>
+    <div class="recommendedBottom">
+        <h4 class="recommendedBottomTitle">PlanMate-APS 系统架构</h4>
+        <div class="row recommendedBottomContent">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 Content-one">
+                <p>Modeler是PlanMate APS的基础数据库，用于存储产品生产工艺，系统的排程运算基础数据从Modeler读入，有独立的维护窗口。</p>
+                <p>Solver通过甘特调入，对排程需求进行逻辑运算，运算完成后回送给甘特显示。</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="ContentImgBox">
+                    <img src="img/123-2.png"/>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 Content-one">
+                <p>Plugin用户接口模块，可以导入订单信息、获取实际生产数量信息、报表导出等功能，该模块可根据用户实际需求进行客制化开发。</p>
+                <p>Gantt是用户图形化界面，将排程结果通过甘特图的方式展现给用户，调整排程也通过该模块调整甘特图的分布即可调整计划。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/top.js"></script>
+<script src="js/foot.js"></script>
+<script src="./js/childNav.js"></script>
+<script src="./js/introduction.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
