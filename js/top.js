@@ -53,9 +53,15 @@
 //         '            </ul>\n' +
 //         '        </div>\n' +
 //         '    </nav>');
+
 (function ($) {
+
     $.fn.extend({
+
         top(option){
+            /**
+             * @option:string
+             */
             $(this).prepend(' <nav class="navbar navbar-expand-lg navbar-light bg-light">\n' +
         '        <a class="navbar-brand" href="#">\n' +
         '            <img src="img/logo.png" alt="">\n' +
@@ -113,6 +119,7 @@
         '    </nav>');
             $('.nav-bar').find('.active').removeClass('active');
            $('.'+option).addClass('active');
+           return this;
         }
     })
 })(jQuery);

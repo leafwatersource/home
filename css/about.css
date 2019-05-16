@@ -1,0 +1,36 @@
+.aboutContent{
+    /*border: 1px solid black;*/
+    margin: 2em 0;
+}
+.aboutContent .imgBox{
+    /*border: 1px solid red;*/
+    height: 100%;
+    padding: 0 3em;
+    display: flex;
+}
+.aboutContent .imgBox img{
+    display: block;
+    /*width: 100%;*/
+    margin: auto auto;
+    min-height: 5em;
+    min-width: 8em;
+    max-height: 10em;
+    max-width: 100%;
+}
+.aboutContent .aboutCon{
+    /*border: 1px solid green;*/
+    height: 100%;
+}
+.aboutCon .aboutTitle{
+    text-align: center;
+    color:#444;
+    margin: 2em 0;
+}
+.aboutContent .aboutCon p{
+    padding: 0 2em;
+    margin: 1em 0;
+    color:#626262;
+}
+.aboutPosition{
+    margin: 2em 0;
+}
