@@ -22,17 +22,17 @@ body {
 
 .list li div {
     text-align: center;
-    padding: 1em 0;
+    padding: 1em 3em;
 }
 
 .list li:nth-of-type(1) .listLeft,.list li:nth-of-type(1) .listRight {
     font-weight: bolder;
     color: #444;
+    padding: 1em .5em;
 }
 .listLeft, .listRight {
     font-size: .8em;
     color: #626262;
-    /*border: 1px solid black;*/
 }
 .recommendedBottom{
     background: url("../img/21493555_142302698559_2-1.jpg");
