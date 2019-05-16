@@ -1,0 +1,35 @@
+.function{
+    font-family: "Microsoft YaHei UI Light", serif;
+}
+
+.functionItemBox .functionIconBox{
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    margin: .5em auto;
+    font-size: 50px;
+    color: #2991d6;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+.function .funcitonTitle{
+    text-align: center;
+    color:#444;
+    margin: .5em 0;
+}
+.functionItemBox  .funcitonDesc{
+    text-align: center;
+    color:#626262;
+    font-size: 13px;
+}
+.functionItemBox:hover .functionIconBox{
+    background-color: #2991d6;
+    color:#fff;
+}

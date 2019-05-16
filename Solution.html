@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,uesr-scalable=no">
+    <title>注塑成型企业生产排程解决方案</title>
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico" />
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/childNav.css">
+    <link rel="stylesheet" href="css/Solution.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container-fluid solutionContent">
+        <p>
+            PlanMateAPS为注塑行业提供了完善的自动生产排程解决方案。注塑成型企业生产工序主要包括注塑、后处理（喷涂、丝印等），注塑件多为半品，最后需要组装为成品。瓶颈工序为注塑成型，也是占用企业资金最大的工序，借助APS自动排程系统，对模具的管理和使用以及颜色切换进行优化，可以大大降低生产成本。</p>
+        <p class="selector">1.模具和机器的选择：</p>
+        <div class="mode">
+            <p class="solutionCon">在成型行业的生产计划模型为以下方式：</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039971-e1530687862890.png">
+            </div>
+            <p class="solutionCon">通常一个模具有几种型号机器可选，在出模时间不变的情况下，优选吨位较低的机器，可以降低生产成本。</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039972.png" >
+            </div>
+        </div>
+        <p class="selector">2.拼模</p>
+        <div class="mode">
+            <p class="solutionCon">PlanMate的模型结构中包括拼模的定义，几个产品拼合使用一个模具，分别开穴位。穴位数可以相同或不同，如下例：</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039973.png">
+            </div>
+            <p class="solutionCon">在自动排程时，Plugin 会对工单进行预处理打包，保留主工单（20474467），关闭部分工单（20474468）。排程时被关闭的工单任务不会排在主资源上，如下例：</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039974.png" >
+            </div>
+            <p class="solutionCon">排程后：保留的工单（20474467）：</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039975.png" >
+            </div>
+            <p class="solutionCon">另一个工单任务隐藏在临时线，不排在主资源（20474468）：</p>
+
+            <div class="solutionImg">
+                <img src="img/91863199960039976.png" >
+            </div>
+        </div>
+        <p class="selector">3.相同产品合并生产</p>
+        <div class="mode">
+            <p class="solutionCon">需求时间接近的相同工单任务，在自动排程时合并生产，甘特图如下:</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039977.png" >
+            </div>
+            <p class="solutionCon">任务表如下：</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039978.png" >
+            </div>
+            <p class="solutionCon">从图形和表格中可以看到，相同料号，需求时间接近的产品合并生产。</p>
+        </div>
+        <p class="selector">4. 注塑中产品颜色的管理</p>
+        <div class="mode">
+            <p class="solutionCon">颜色切换需要时间，清洗机器也会造成色料浪费。
+                因系统并不能识别汉字颜色的含义，因此在模型中会定义颜色切换需要的时间和成本，需要禁止的切换（例如黑色到白色，或透明无色）</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039979.png" >
+            </div>
+            <p class="solutionCon">禁止的切换在排程中会避免。 允许的切换系统根据模型计算切换时间。
+                在机器和需求时间满足的情况下，优先将相同颜色的订单排在一起，而后将相近颜色（切换时间短及成本低）的排在一起。</p>
+            <p class="solutionCon">以下加亮的任务为相同颜色的产品：</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039980.png" >
+            </div>
+            <p class="solutionCon">切换时间：切换模具需要的时间和切换产品需要的时间取其较长的。</p>
+        </div>
+        <p class="selector">5. 使用相同模具的产品工单排程优化</p>
+        <div class="mode">
+            <p class="solutionCon">如果颜色切换不在禁止之列，相同模具的工单因切换时间短，也会优先排在一起。
+                有些产品模具相同， 颜色不同。或有些产品颜色和模具都相同，只是使用的镶嵌件不同，这样的产品料号会优先排在一起。</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039981.png" >
+            </div>
+        </div>
+        <p class="selector">6. 实际生产进度</p>
+        <div class="mode">
+            <p class="solutionCon">工厂未导入MES系统，每日换班前录入本班次的工作报表，Planmate读入工作报表更新工作进度，生管按照实际进度调整计划。后续考虑引入 <a href="#">手机现场报工软件</a> ，不只可以及时得到生产进度，也可以省去输入报表的工作，另外各部门主管可以在手机上实时看到工作进度。</p>
+        </div>
+        <p class="selector">7. 订单调整和计划的修改</p>
+        <div class="mode">
+            <p class="solutionCon">正常情况下每天下载新工单，运行一次排程，当前的计划中会有部分工单完结，又有部分新工单加入。</p>
+            <p class="solutionCon">如果设备异常或延产，生管可以手工调整异常，如果异常较多则让系统重排。手工调整包括：
+                任务移动到其它设备
+                拆分合并工单
+                暂停生产</p>
+            <p class="solutionCon">未来24小时的计划锁定：在工单变更或设备异常需要重新排程时，继承当前锁定的任务，保持未来24小时的计划在重排的时候不变。</p>
+        </div>
+        <p class="selector">8. 模具养护和管理</p>
+        <div class="mode">
+            <p class="solutionCon">模具在养护期间，暂停使用，可以定义模具养护的时间范围，长度可为数天。在模具养护期间，使用此模具的产品使用备模，如果没有备模则延迟生产。</p>
+        </div>
+        <p class="selector">9. 多模具选择</p>
+        <div class="mode">
+            <p class="solutionCon">如果产品只有一个模具，排程不会同时开两台机生产。
+                部分量大的产品会有多于一个模具，在模型中系统需要定义模具选择优先级，按照优先级选择模具。如果只使用一个模具会超过交货期，则系统会同时使用多个模具生产。</p>
+            <div class="solutionImg">
+                <img src="img/91863199960039982.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script src="js/childNav.js"></script>
+<script src="js/top.js"></script>
+<script src="js/foot.js"></script>
+<script src="js/Solution.js"></script>
+</body>
+</html>

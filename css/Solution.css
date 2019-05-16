@@ -1,0 +1,39 @@
+body {
+    font-family: "Microsoft YaHei UI Light", serif;
+}
+
+.solutionContent {
+    padding: 0 5em;
+}
+
+.solutionContent p {
+    color: #626262;;
+    font-size: 13px;
+    margin: 0 0 15px;
+}
+.solutionContent .selector{
+    font-weight: bolder;
+    margin: 1em 0;
+}
+.solutionContent .solutionCon{
+    padding: 0 1em;
+}
+.solutionContent .mode{
+    /*padding: 0 1em;*/
+}
+.solutionContent .mode .solutionImg{
+    padding: 0 1em;
+    margin: 1em 0;
+}
+.solutionContent .mode .solutionImg img{
+    max-width: 100%;
+}
+.solutionContent .mode a{
+    color: #2991d6;
+    font-weight: bolder;
+}
+@media screen and (max-width: 767px){
+    .solutionContent {
+        padding: 0 2em;
+    }
+}

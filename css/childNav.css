@@ -15,7 +15,7 @@ a{
 .articleTitleLeft h4 {
     padding: 0 2em;
     color: #888;
-    font-weight: bolder;
+    font-weight: 800;
 }
 
 .articleTitleRight .aritcleNav {
@@ -39,8 +39,5 @@ a{
     }
     .contentRight select{
         display: none;
-    }
-    .articleTitleLeft h4 {
-        font-weight: normal;
     }
 }
