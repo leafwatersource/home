@@ -15,7 +15,8 @@ a{
 .articleTitleLeft h4 {
     padding: 0 2em;
     color: #888;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .articleTitleRight .aritcleNav {
@@ -39,5 +40,19 @@ a{
     }
     .contentRight select{
         display: none;
+    }
+    .articleTitleLeft h4 {
+        font-size: 19px;
+    }
+
+}
+@media screen and (max-width: 959px) and (min-width: 768px){
+    .articleTitleLeft h4 {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 480px){
+    .articleTitleLeft h4 {
+        font-size: 15px;
     }
 }

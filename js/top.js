@@ -30,7 +30,7 @@
         '                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">\n' +
         '                        <a class="dropdown-item item-three-first" href="./introduction.html">产品概述</a>\n' +
         '                        <a class="dropdown-item item-three-second" href="./function.html">功能介绍</a>\n' +
-        '                        <a class="dropdown-item item-three-third" href="#">可带来的收</a>\n' +
+        '                        <a class="dropdown-item item-three-third" href="./yield.html">可带来的收益</a>\n' +
         '                        <a class="dropdown-item item-three-fourth" href="#">可解决的问题</a>\n' +
         '                    </div>\n' +
         '                </li>\n' +
@@ -47,7 +47,7 @@
         '                    </div>\n' +
         '                </li>\n' +
         '                <li class="nav-item item-five">\n' +
-        '                    <a class="nav-link" href="#">产品演示视频</a>\n' +
+        '                    <a class="nav-link" href="./videos.html">产品演示视频</a>\n' +
         '                </li>\n' +
         '                <li class="nav-item item-six">\n' +
         '                    <a class="nav-link" href="#">客户案例</a>\n' +
