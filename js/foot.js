@@ -1,6 +1,6 @@
 $('.wrapper').append("<div class=\"footer container-fluid\">\n" +
     "    <div class=\"row foot-top\">\n" +
-    "        <div class=\"col-lg-4 content\">\n" +
+    "        <div class=\"col-lg-4 col-md-4 col-sm-4 content\">\n" +
     "            <h5 class=\"title\">近期文章</h5>\n" +
     "            <div class=\"Article\">\n" +
     "                <p>APS生产排程系统基础知识-数据模型</p>\n" +
@@ -23,7 +23,7 @@ $('.wrapper').append("<div class=\"footer container-fluid\">\n" +
     "                <span></span>\n" +
     "            </div>\n" +
     "        </div>\n" +
-    "        <div class=\"col-lg-4 content\">\n" +
+    "        <div class=\"col-lg-4 col-md-4 col-sm-4 content\">\n" +
     "            <h5 class=\"title\">在线留言</h5>\n" +
     "            <div class=\"Leaving\">\n" +
     "                <div class=\"row inputG\">\n" +
@@ -37,9 +37,9 @@ $('.wrapper').append("<div class=\"footer container-fluid\">\n" +
     "                    <div class=\"col-lg-6\"><input type=\"text\" placeholder=\"联系方式\"></div>\n" +
     "                </div>\n" +
     "                <div class=\"row inputR\">\n" +
-    "                    <input type=\"radio\" name=\"selector\"><span>申请使用</span>\n" +
-    "                    <input type=\"radio\" name=\"selector\"><span>业务咨询</span>\n" +
-    "                    <input type=\"radio\" name=\"selector\"><span>技术服务</span>\n" +
+    "<div class='col-4'> <input type=\"radio\" name=\"selector\"><span>申请使用</span></div>\n" +
+    "<div class='col-4'> <input type=\"radio\" name=\"selector\"><span>业务咨询</span></div>\n" +
+    "<div class='col-4'> <input type=\"radio\" name=\"selector\"><span>技术服务</span></div>\n" +
     "                </div>\n" +
     "                <div class=\"row textArea\">\n" +
     "                    <textarea placeholder=\"留言内容\"></textarea>\n" +
@@ -49,20 +49,20 @@ $('.wrapper').append("<div class=\"footer container-fluid\">\n" +
     "                </div>\n" +
     "            </div>\n" +
     "        </div>\n" +
-    "        <div class=\"col-lg-4 content\">\n" +
+    "        <div class=\"col-lg-4 col-md-4 col-sm-4 content\">\n" +
     "            <h5 class=\"title\">联系我们</h5>\n" +
     "            <div class=\"contact\">\n" +
     "                <div>\n" +
     "                    <p>深圳市瑞特科技有限公司</p>\n" +
     "                </div>\n" +
     "                <div>\n" +
-    "                    <p>地址：广东省深圳市龙华区光浩国际中心1801室 <br> 网址：http://www.szratetec.com</p>\n" +
+    "                    <p>地址:广东省深圳市龙华区光浩国际中心1801室 <br> 网址：http://www.szratetec.com</p>\n" +
     "                </div>\n" +
     "                <div>\n" +
-    "                    <p>业务咨询：13560791720 <br><span> 业务邮箱：</span><a href=\"mailto:Sales@szratetec.com\"> Sales@szratetec.com</a></p>\n" +
+    "                    <p>业务咨询:13560791720 <br><span> 业务邮箱：</span><a href=\"mailto:Sales@szratetec.com\"> Sales@szratetec.com</a></p>\n" +
     "                </div>\n" +
     "                <div>\n" +
-    "                    <p> 技术服务：13316961984 <br><span>技术服务邮箱：</span><a href=\"http://www.Johnny@szratetec.com\">Johnny@szratetec.com</a></p>\n" +
+    "                    <p> 技术服务:13316961984 <br><span>技术服务邮箱：</span><a href=\"http://www.Johnny@szratetec.com\">Johnny@szratetec.com</a></p>\n" +
     "                </div>\n" +
     "            </div>\n" +
     "        </div>\n" +

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PCBA/SMT行业生产排程难点与解决方案</title>
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico" />
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/childNav.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/smtplanmate.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="smtplanmateContent">
+        <div class="smtplanmateCon">
+            <p class="desc">中国是电子制造业大国，全世界的电子产品超过一半在中国制造，PCBA工厂众多，成本不断提升，企业利润一再压薄，提升效率，降低成本是所有PCBA企业的共同需求。高效的生产排程，是企业降低成本的一个重要手段。<br>
+            SMT的生产排程有一些共同特点和难点，本文以PlanMateAPS为示例，给出APS系统如何处理这些问题：</p>
+            <p class="smtplanmateTitle">一、模型维护问题：</p>
+            <p class="titleH">难点：</p>
+            <ul class="smtplanmateText">
+                <li>1、每个产品的生产工艺都可能不同。有的过单面SMT，有的过双面。有些PCB需要AI或手插，有的PCB需要ICT，ATE。因此模型维护的难度比较大。</li>
+                <li>2、 对机器的特别要求。SMT生产常常指定产线，有时是因为技术需求，例如长线生产零件多的机种，短线生产零件少的机种，精度高的新机器生产精度要求高的机种，有时是因为客户指定线体。因此每个机种需要指定固定的几条线生产，且需定义选择优先级。这部分需要在模型中定义。</li>
+                <li>3、 PlanMate排程系统支持SMT所需要的模型结构，难点在于如何保证模型的准确。模型不准确直接影响排程的结果。</li>
+            </ul>
+            <p class="titleH">解决方案：</p>
+            <p class="desc">模型的维护虽然PlanMate可在排程之前做出模型检查，但并不能检查到类似PPH不正确这样的问题，实际属于企业的管理问题，不只单纯靠技术，需要完善管理流程，明确权限，PlanMate采用独立的权限控制，由PMC部门负责生产排程，为工程部开放独立的模型维护权限，在建模器和排程系统界面中，都可以检查并修改产品的模型。</p>
+            <p class="desc">//工程部需要指定人员负责模型维护，专人专责；<br>
+                //每个工作计划包含的机种，系统自动进行模型检查，所有不完整的模型给出报告，工程部可以根据报告补充；<br>
+                //每周定期导出模型报表，由工程部人员进行检查，如过发现模型不准确立即修改。</p>
+            <p class="desc">注解：模型变更后系统可以快速重排计划。</p>
+            <p class="smtplanmateTitle">一、物料问题：</p>
+            <p class="titleH">难点：</p>
+            <p class="desc">SMT行业属于欠料比较严重的行业，在大型企业中，每天都会有机种因欠料延迟生产。很多SMT企业采用开工单方式管控生产， ERP系统中会查询料况，已经齐料的工单被Release，但通常只会Release最近2天能生产的工单，生管也只排1-2天的计划（只排Released工单），后续工单哪天开始生产暂不考虑。这样做的弊端是：</p>
+            <ul class="smtplanmateText">
+                <li>1、企业无法得到2天后的生产和交货计划，不能及时回复客户交期，安排出货运输等；</li>
+                <li>2、对于欠料的工单，物料一入库，就马上Release工单，插单生产，导致生产计划需要立即变更，引起混乱。</li>
+            </ul>
+            <p class="titleH">解决方案：</p>
+            <p class="desc">采用在途库存约束是欠料问题的解决方案。ERP系统中，物料未到不能入库，因此库存中没有此项，工单欠料。但采购部门一般会得到一定时间内的来料计划，通常一周内的来料计划都会比较确定。将来料计划作为在途库存，与在库库存一起参与排程约束，工单会排在齐料时间点之后，而不是不排或随意安排。</p>
+            <p class="desc">使用在途库存约束，可以提前得到准确的生产和交货计划，方便与客户沟通和安排交货，准备上线的配件及SMT程序等。同时避免了过于频繁的因料况而产生出的计划变更。</p>
+            <p class="desc">在途库存的扣减规则见本博客的另一篇文章：生产排程中的库存扣减规则及约束</p>
+            <p class="desc">注解：在SMT 行业中，料况是制约SMT生产的关键因素，不考虑料况的生产排程系统是不可行的，排程时忽略料况，后果就是频繁的更改计划</p>
+            <p class="smtplanmateTitle">三、BOM版本及替代料：</p>
+            <p class="titleH">难点：</p>
+            <p class="desc">1、BOM版本变更： PCBA生产中，BOM经常有变更，版本变化快。同一个编码的机种，版本发生变更，BOM就会随之变更。如果模型中采用固定的BOM，而不能及时更新BOM最新版本，就会造成排程系统与ERP中的BOM不一致。2、 替代料问题:很多机种，会对其中的一些物料，准备多种替代料。排程中部分工单会采用替代料。</p>
+            <p class="titleH">解决方案：</p>
+            <p class="desc">通常是否使用替代料由ERP决定，ERP会对每个工单单独决定使用哪种替代料，不能由排程系统自己决定替代料。BOM经常发生版本变更，APS系统很难实时获取到最新的版本。</p>
+            <p class="desc">一种可行且准确的方法是采用工单料表替代静态BOM。 采用此种方法的要求是ERP对每个待排工单，输出工单料表，APS系统在从ERP读入排程工单时，同时导入库存和工单料表，根据料表查询库存确定齐料时间。</p>
+            <p class="desc">大部分ERP都有工单料表，MES系统需要工单料表，有些工厂使用条码对料系统， 也需要使用工单料表。</p>
+            <p class="desc">采用工单料表的主要问题是每次导入APS的数据量比较大，因此主要用在详细排程阶段，在长期计划阶段一般关闭库存约束，也不需要使用工单料表。</p>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script src="js/top.js"></script>
+<script src="js/foot.js"></script>
+<script src="js/childNav.js"></script>
+<script src="js/smtplanmate.js"></script>
+</body>
+</html>

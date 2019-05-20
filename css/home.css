@@ -67,8 +67,12 @@
 
 .showDiv .row .showDivContent {
     padding: 0 1em;
+    text-align: center;
 }
-
+.showDivContent i{
+    font-size: 50px;
+    color: #fff;
+}
 .showDiv .row .showDivContent {
     min-height: 15em;
     background-color: #2991d6;
@@ -80,14 +84,10 @@
     cursor: pointer;
 }
 
-.showDiv .row div .showDivContent {
-    overflow: auto;
-}
-
 .showDiv .row div .showDivContent p {
     color: #fff;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 20px;
     margin: 4em auto;
 }
 
@@ -262,13 +262,15 @@
 .Product .ProductItem .product-Left {
     float: right;
     padding: 1em 2em;
+    cursor: pointer;
     border: .1em solid rgb(0, 147, 201);
 
 }
 
 .Product .ProductItem .product-Right {
     float: left;
-    padding: 1em 2em;
+    padding: 1em 2em;    cursor: pointer;
+
     border: .1em solid rgb(0, 147, 201);
 }
 .Product .ProductItem div{
@@ -476,6 +478,7 @@ color: #fff;
 .CustomerBottomRight {
     border: 1px solid black;
 }
+
 @media screen and (max-width: 767px){
     .ProductItem .product-Left,.ProductItem .product-Right{
         float: none !important;

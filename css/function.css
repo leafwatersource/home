@@ -19,6 +19,9 @@
     -o-transition: all 500ms;
     transition: all 500ms;
 }
+.functionItemBox:nth-last-child(1){
+    margin-bottom: 2em;
+}
 .function .funcitonTitle{
     text-align: center;
     color:#444;

@@ -1,0 +1,32 @@
+.smtplanmateContent{
+    font-family: "Microsoft YaHei UI Light", serif;
+    padding: 0 5em;
+}
+.smtplanmateCon .desc{
+    color: #626262;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+.smtplanmateCon .smtplanmateTitle{
+    color: #626262;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.titleH{
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.smtplanmateText{
+    padding: 0;
+}
+.smtplanmateText li{
+    font-size: 13px;
+
+}
+@media screen and (max-width: 767px) {
+    .smtplanmateContent {
+        padding: 0 2em;
+    }
+}

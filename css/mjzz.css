@@ -1,0 +1,24 @@
+.mjzzContent {
+    font-family: "Microsoft YaHei UI Light", serif;
+    padding: 0 5em;
+}
+
+.mjzzContent .mjzzTitle {
+    font-size: 15px;
+    color: #626262;
+    font-weight: 700;
+}
+.mjzzContent .mjzzTitle:nth-last-child(1){
+    margin: 2em 0;
+}
+.mjzzItem li {
+    color: #737E86;
+    font-size: 13px;
+    padding: .4em 0;
+    font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+    .mjzzContent {
+        padding: 0 2em;
+    }
+}

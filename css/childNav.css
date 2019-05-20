@@ -9,7 +9,9 @@ a{
 }
 
 .articleTitleLeft {
-    padding: 0 2em;
+    /*padding: 0 2em;*/
+    padding: 0 0 0 2em;
+    /*border: 1px solid black;*/
 }
 
 .articleTitleLeft h4 {
@@ -17,6 +19,7 @@ a{
     color: #888;
     font-size: 25px;
     font-weight: 500;
+    word-break:break-all;
 }
 
 .articleTitleRight .aritcleNav {

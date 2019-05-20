@@ -1,52 +1,24 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>地图平移</title>
-    <!--<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>-->
-    <!--<script src="https://webapi.amap.com/maps?v=1.4.14&key=您申请的key值"></script>-->
-    <!--<script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>-->
-    <!--<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph&#45;&#45;main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"http://www.szratetec.com/#organization","name":"\u6df1\u5733\u5e02\u745e\u7279\u79d1\u6280\u6709\u9650\u516c\u53f8","url":"http://www.szratetec.com/","sameAs":[],"logo":{"@type":"ImageObject","@id":"http://www.szratetec.com/#logo","url":"http://www.szratetec.com/wp-content/uploads/2017/09/LOGO-e1519522872734-1.png","caption":"\u6df1\u5733\u5e02\u745e\u7279\u79d1\u6280\u6709\u9650\u516c\u53f8"},"image":{"@id":"http://www.szratetec.com/#logo"}},{"@type":"WebSite","@id":"http://www.szratetec.com/#website","url":"http://www.szratetec.com/","name":"\u6df1\u5733\u5e02\u745e\u7279\u79d1\u6280\u6709\u9650\u516c\u53f8","publisher":{"@id":"http://www.szratetec.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"http://www.szratetec.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"http://www.szratetec.com/aboutus/#webpage","url":"http://www.szratetec.com/aboutus/","inLanguage":"zh-CN","name":"\u5173\u4e8e\u745e\u7279\u79d1\u6280-\u6df1\u5733\u5e02\u745e\u7279\u79d1\u6280\u6709\u9650\u516c\u53f8","isPartOf":{"@id":"http://www.szratetec.com/#website"},"datePublished":"2017-10-24T10:50:00+00:00","dateModified":"2018-05-23T08:34:27+00:00","description":"\u745e\u7279\u79d1\u6280\u521b\u7acb\u4e4b\u521d\uff0c\u4e3aPCBA\u884c\u4e1a\u63d0\u4f9bCAM\u89e3\u51b3\u65b9\u6848\uff0c\u5f00\u53d1\u4e86SMT\u3001AI\u3001ICT\u7b49\u591a\u79cd\u8bbe\u5907\u7684\u8f85\u52a9\u7f16\u7a0b\u4f18\u5316\uff0c\u5728PCBA\u884c\u4e1a\u62e5\u6709\u4f17\u591a\u5ba2\u6237\u3002\u968f\u7740\u5236\u9020\u4e1a\u7cbe\u7ec6\u5316\u751f\u4ea7\u7684\u9700\u6c42\uff0c\u5bf9\u751f\u4ea7\u6392\u7a0b\u7684\u9700\u6c42\u65e5\u76ca\u8feb\u5207\u3002\u745e\u7279\u79d1\u6280\u5f15\u8fdb\u6e90\u81ea\u4ee5\u8272\u5217\u7684\u8f6f\u4ef6\u6280\u672f\uff0c\u52a0\u4e0a\u591a\u5e74\u5728\u5236\u9020\u4e1a\u7684\u7ecf\u9a8c\uff0c\u81ea\u4e3b\u5f00\u53d1\u51faPlanMate\u9ad8\u7ea7\u751f\u4ea7\u6392\u7a0b\u7cfb\u7edf\uff0c\u4e3a\u5236\u9020\u4e1a\u63d0\u4f9b\u751f\u4ea7\u6392\u7a0b\u89e3\u51b3\u65b9\u6848\u3002"}]}</script>-->
-    <!--<script id="mfn-dnmc-retina-js">-->
-        <!--//<![CDATA[-->
-        <!--jQuery(window).load(function(){-->
-            <!--var retina = window.devicePixelRatio > 1 ? true : false;if( retina ){var retinaEl = jQuery("#logo img.logo-main");var retinaLogoW = retinaEl.width();var retinaLogoH = retinaEl.height();retinaEl.attr( "src", "http://www.szratetec.com/wp-content/uploads/2017/09/LOGO-e1519522872734-1.png" ).width( retinaLogoW ).height( retinaLogoH );var stickyEl = jQuery("#logo img.logo-sticky");var stickyLogoW = stickyEl.width();var stickyLogoH = stickyEl.height();stickyEl.attr( "src", "http://www.szratetec.com/wp-content/uploads/2017/09/LOGO-e1519522872734-1.png" ).width( stickyLogoW ).height( stickyLogoH );var mobileEl = jQuery("#logo img.logo-mobile");var mobileLogoW = mobileEl.width();var mobileLogoH = mobileEl.height();mobileEl.attr( "src", "http://www.szratetec.com/wp-content/uploads/2017/09/LOGO-e1519522872734-1.png" ).width( mobileLogoW ).height( mobileLogoH );var mobileStickyEl = jQuery("#logo img.logo-mobile-sticky");var mobileStickyLogoW = mobileStickyEl.width();var mobileStickyLogoH = mobileStickyEl.height();mobileStickyEl.attr( "src", "http://www.szratetec.com/wp-content/uploads/2017/09/LOGO-e1519522872734-1.png" ).width( mobileStickyLogoW ).height( mobileStickyLogoH );}});-->
-        <!--//]]>-->
-    <!--</script>-->
-    <script src="js/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>測試</title>
+<link rel="shortcut icon" href="img/bitbug_favicon.ico" />
+<link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/childNav.css">
+<link rel="stylesheet" href="css/top.css">
+<link rel="stylesheet" href="css/foot.css">
+<link rel="stylesheet" href="css/smtplanmate.css">
+
 </head>
 <body>
-<div class="vc_row wpb_row vc_row-fluid">
-    <div class="wpb_column vc_column_container vc_col-sm-12">
-        <div class="vc_column-inner">
-            <div class="wpb_wrapper">
-                <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey">
-                    <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span
-                        class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
-                </div>
-                <div class="wpb_text_column wpb_content_element ">
-                    <div class="wpb_wrapper">
-                        <h1 style="text-align: center;">我们的位置</h1>
+<div class="mejs-overlay mejs-layer mejs-overlay-play" style="width: 100%; height: 100%;"><div class="mejs-overlay-button" role="button" tabindex="0" aria-label="播放" aria-pressed="false"></div></div>
 
-                    </div>
-                </div>
-                <div class="wpb_gmaps_widget wpb_content_element vc_map_responsive">
-                    <div class="wpb_wrapper">
-                        <div class="wpb_map_wraper">
-                            <iframe width="100%" height="800"  frameborder="0" scrolling="no" marginheight="0"
-                                    marginwidth="0"
-                                    src="http://uri.amap.com/marker?position=114.029396,22.628352&amp;t=m&amp;z=14&amp;output=embed"
-                                    style="pointer-events: none;"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script type='text/javascript' src='http://www.szratetec.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.7'></script>
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script src="./js/foot.js"></script>
 </body>
 </html>

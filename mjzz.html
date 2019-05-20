@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模具制造企业生产排程需求及解决方案</title>
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico" />
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/childNav.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/mjzz.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="mjzzContent">
+        <p class="mjzzTitle">模具制造企业的生产排程有以下特点：</p>
+        <ul class="mjzzItem">
+            <li>1.订单通常是单个，很少有重复的订单；</li>
+            <li>2.设备种类多，工序复杂；</li>
+            <li>3.每个产品的组成和加工工艺都不相同，每个订单都需要定义BOM和工艺流程；</li>
+            <li>4.生产工艺经常有变更，因此工艺模型不确定，经常有反复的试模和修模。</li>
+        </ul>
+        <p class="mjzzTitle"> 模具制造企业引入生产排程系统有几个难点：</p>
+        <ul class="mjzzItem">
+            <li>1.模型维护困难，因为每个产品BOM结构和生产工艺都不同，每个产品都需要定义工艺流程、选择设备、定义生产参数。APS系统常用的模型维护方法并不适用；</li>
+            <li>2.生产计划执行中的变化多。各种返工、修模随时发生。标准工时不准，难以预计生产时间；</li>
+            <li>3.紧急插单随时发生；</li>
+            <li>4.生产过程中会忽然变更工艺流程，临时增减工序；</li>
+            <li>5.同一套模具，又分为新品制造，维修，养护，补料等多工需求，每种工艺需要的工序和设备不同。</li>
+        </ul>
+        <p class="mjzzTitle">我们从以下几个方面考虑解决方案：</p>
+        <ul class="mjzzItem">
+            <li>1.模型维护的便捷性：可以预先定义标准工序，指定设备和作业时间，尽量简化产品建模，建模时只需要将标准工序组合起来就可以，不需要为每个工序再选设备。例如:自动铣床-大-120；自动铣床-中-80；自动铣床-小-60；CNC-60；CNC-50。以上预定义工序，提前定义好允许的设备和时间，建模的时候只需要选择预定义工序，不用重新选择设备。可以重新定义加工时间。</li>
+            <li>2.产品之间允许拷贝模型，在拷贝的模型上修改，增减工序和修改生产时间。</li>
+            <li>3.在排程中允许随时修改工艺流程。如果有增减工序，能马上调入排程中，修改计划。例如模型中如果增加了一个工序，可以立即将新增任务插入现有的计划中。</li>
+            <li>4.允许在排程中插入临时任务，例如返工。</li>
+            <li>5.订单分类：正常生产订单，或养护修改保养等临时订单分类管理。正常工单按加工工艺模型排程， 临时工单可单独定义需要的生产工序及设备，指定开工日期和设备。</li>
+            <li>6.允许部分组件和工序外发。</li>
+            <li>7.一个模具包括多个部件，跟踪与一个订单各部件的加工进度。</li>
+            <li>8.报工问题：模具企业因为单件生产，大部分不会导入MES系统，报工的及时性是APS系统运行的关键。使用Planmate的手机报工模块，现场每完成一个加工任务及时报工，操作简单方便，使计划的实际进度可以及时更新，计划员可以随时跟进进度。</li>
+            <li>9.传统的模具生产管理采用调度会议，Planmate的手机计划报表模块，可使各部门随时了解生产计划和当前进度，节省大量的会议沟通时间。车间不只可以看到自己本车间的计划和进度，也可以了解关联的上下游车间的生产进度。</li>
+        </ul>
+        <p class="mjzzTitle">综上，模具企业生产排程，难点不在于算法，而在于方便灵活的模型维护，计划修改，现场数据的及时反馈。</p>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script src="js/top.js"></script>
+<script src="js/foot.js"></script>
+<script src="js/childNav.js"></script>
+<script src="js/mjzz.js"></script>
+
+</body>
+</html>

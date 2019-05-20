@@ -1,44 +1,54 @@
-html,body{
-    width:100%;
-    height:100%;
+html, body {
+    width: 100%;
+    height: 100%;
 }
-.footer{
+
+.footer {
     background-color: #545454;
+    font-family: "Microsoft YaHei UI Light", serif;
 }
-.footer .row .content{
+.footer .foot-top{
     padding: 0 4em;
-    margin:2em 0;
 }
-.content{
-    width:100%;
+.footer .row .content {
+    padding: 0 1em;
+    margin: 2em 0;
 }
-.content .title{
-    color:#aeaeae;
+
+.content {
+    width: 100%;
 }
-.content .Article{
-    width:100%;
-    color:#aeaeae;
-    background-color:#4b4b4b;
-    padding:.5em;
+
+.content .title {
+    color:#fff ;
+}
+
+.content .Article {
+    width: 100%;
+    color: #fff;
+    background-color: #4b4b4b;
+    padding: .5em;
     margin: .5em 0;
     position: relative;
     z-index: 3;
 }
-.content .Article p{
-    font-size: .9em;
+
+.content .Article p {
     margin: 0;
     z-index: 2;
     position: relative;
-
+    cursor: pointer;
 }
-.content .Article p::after{
+
+.content .Article p::after {
     content: '';
     display: block;
     width: 100%;
     margin-top: .5em;
     border: .5px solid #595959;
 }
-.content .Article span{
+
+.content .Article span {
     position: absolute;
     right: 0;
     top: 0;
@@ -51,103 +61,174 @@ html,body{
     -o-transition: all 500ms;
     transition: all 500ms;
 }
-.content .Article:hover span{
+
+.content .Article:hover span {
     width: 100%;
-    z-index:1;
+    z-index: 1;
 }
 
-.inputG div{
+.inputG div {
     width: 100%;
     margin: .2em 0;
 }
-.inputG input[type='text']{
-    width:100%;
+
+.inputG input[type='text'] {
+    width: 100%;
     padding: .5em 1em;
     outline: none;
     color: #0084ff;
-    font-size: .5em;
+    /*font-size: 15px;*/
 }
+
 .inputG input::-webkit-input-placeholder {
     color: #999;
-    font-size: .5em;
+    /*font-size: 15px;*/
 }
 
 .inputG input::-moz-placeholder {
     color: #999;
-    font-size: .5em;
+    /*font-size: 15px;*/
 }
 
 .inputG input::-ms-input-placeholder {
-    color: #999;
-    font-size: .5em;
+    color: #fff;
+    /*font-size: 15em;*/
 }
-.inputR{
+
+.inputR {
     padding: .2em 0;
     margin: .2em 0;
 }
-.inputR input[type=radio]{
-    margin-left: 1em;
+.inputR div{
+    padding: 0;
 }
-.inputR span{
-    margin-left: .2em;
-    font-size: .5em;
-    line-height: .8em;
-    color:#999;
+.inputR input[type=radio] {
+    /*margin-left: 1em;*/
 }
-.textArea{
+
+.inputR span {
+    /*margin-left: .2em;*/
+    /*font-size: 15px;*/
+    /*line-height: .8em;*/
+    color: #fff;
+    word-break: keep-all;
+}
+
+.textArea {
     padding: 0 1em;
 }
-.textArea textarea{
-    width:100%;
+
+.textArea textarea {
+    width: 100%;
     color: #0084ff;
-    font-size: .5em;
+    /*font-size: 15px;*/
     padding: .5em 1em;
 }
-.leafBtn{
+
+.leafBtn {
     padding: 0 1em;
     margin-top: 2em;
 }
-.leafBtn button{
-    font-size: .5em;
+
+.leafBtn button {
+    /*font-size: 15px;*/
 }
-.contact div p{
-    font-size: .7em;
-    color:#999;
-    white-space:nowrap;
+
+.contact div p {
+    /*font-size: 15px;*/
+    padding: 0 1em 0 2em;
+    color: #fff;
 }
-.contact div:nth-of-type(1) p{
+
+.contact div:nth-of-type(1) p {
     font-weight: bolder;
 }
-.contact div p a:hover{
+
+.contact div p a:hover {
     text-decoration: none;
 }
-.foot-top{
+
+.foot-top {
     margin-bottom: 2em;
     border: .5px solid #666666;
 }
-.foot-footer{
+
+.foot-footer {
     padding: 0 4em;
 }
-.foot-footer p{
-    color:#999;
-    width:100%;
-    font-size: .7em;
+
+.foot-footer p {
+    color: #fff;
+    width: 100%;
+    /*font-size: 15px;*/
     margin: 0;
     margin-bottom: .5em;
 }
-.foot-footer p:nth-of-type(3){
+
+.foot-footer p:nth-of-type(3) {
     position: relative;
     margin-bottom: 2em;
 }
-.foot-footer p a{
+
+.foot-footer p a {
     display: block;
     position: absolute;
     right: -2em;
     top: 0;
     background-color: #999;
-    color:#fff;
+    color: #fff;
     padding: .2em;
 }
-.foot-footer p a:hover{
+
+.foot-footer p a:hover {
     text-decoration: none;
+}
+@media screen and (min-width: 960px) {
+    .content .Article p,
+    .contact div p,
+    .foot-footer p,
+    .inputG input::-webkit-input-placeholder,
+    .inputG input::-moz-placeholder,
+    .inputG input::-ms-input-placeholder,
+    .inputR span,
+    .textArea textarea,
+    .leafBtn button{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 959px) {
+    .content .Article p{
+        font-size: 13px    }
+    .contact div p{
+        font-size: 13px;
+    }
+    .foot-footer p{
+        font-size: 13px;
+    }
+    .inputG input::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+    .inputG input::-moz-placeholder{
+        font-size: 13px;
+    }
+    .inputG input::-ms-input-placeholder{
+        font-size: 13px;
+    }
+    .inputR span{
+        font-size: 13px;
+    }
+    .textArea textarea{
+        font-size: 13px;
+    }
+    .leafBtn button{
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .foot-footer {
+        padding: 0 2em;
+    }
 }
